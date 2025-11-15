@@ -3,13 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gavin's Portfolio</title>
-
-        <link rel="stylesheet" href="style.css">
+    <title>Gavin Allman | My SEO Journey</title>
+    <meta name="description" content="This webpage is my SEO learning journey where I document my projects, share insights, and blog about SEO strategies.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- JSON-LD Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Gavin Allman - My SEO Journey",
+        "url": "https://gavinallman.me/",
+        "description": "This webpage is my SEO learning journey where I document my projects, share insights, and blog about SEO strategies.",
+        "author": {
+            "@type": "Person",
+            "@id": "https://gavinallman.me/",
+            "name": "Gavin Allman",
+            "jobTitle": "Marketing Student & Learning SEO",
+            "description": "Senior at West Virginia Wesleyan College studying marketing with a computer science minor, learning SEO fundamentals.",
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "West Virginia Wesleyan College"
+            },
+            "knowsAbout": ["SEO", "Marketing", "Computer Science", "Digital Marketing"],
+            "url": "https://gavinallman.me/"
+        },
+        "inLanguage": "en-US",
+        "potentialAction": {
+            "@type": "ReadAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gavinallman.me/"
+            }
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://gavinallman.me/",
+        "name": "Gavin Allman",
+        "givenName": "Gavin",
+        "familyName": "Allman",
+        "jobTitle": "Marketing Student & SEO Learner",
+        "description": "Senior at West Virginia Wesleyan College studying bachelors in marketing with a completed computer science minor, passionate about learning SEO fundamentals and digital marketing.",
+        "url": "https://gavinallman.me/",
+        "sameAs": [
+            "https://www.linkedin.com/in/gavin-allman-608aa8274/",
+            "https://github.com/GavinAllman"
+        ],
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "West Virginia Wesleyan College"
+        },
+        "knowsAbout": [
+            "Search Engine Optimization",
+            "Digital Marketing",
+            "Computer Science",
+            "Marketing Strategy",
+            "Web Development"
+        ],
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Marketing Student",
+            "occupationLocation": {
+                "@type": "Place",
+                "name": "West Virginia"
+            }
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "My SEO Journey Blog",
+        "description": "A blog documenting my journey learning SEO fundamentals from scratch, including weekly progress updates and insights.",
+        "url": "https://gavinallman.me",
+        "author": {
+            "@type": "Person",
+            "@id": "https://gavinallman.me",
+            "name": "Gavin Allman"
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "Week One",
+                "url": "https://gavinallman.me/WeekOne.html",
+                "author": {
+                    "@type": "Person",
+                    "@id": "https://gavinallman.me",
+                    "name": "Gavin Allman"
+                },
+                "publisher": {
+                    "@type": "Person",
+                    "name": "Gavin Allman"
+                },
+                "inLanguage": "en-US"
+            }
+        ],
+        "inLanguage": "en-US"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Gavin Allman - My SEO Journey Homepage",
+        "description": "Homepage documenting Gavin Allman's journey learning SEO fundamentals, featuring blog posts about SEO strategies and personal insights.",
+        "url": "https://gavinallman.me",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Gavin Allman - My SEO Journey",
+            "url": "https://gavinallman.me"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Search Engine Optimization Learning"
+        },
+        "author": {
+            "@type": "Person",
+            "@id": "https://gavinallman.me",
+            "name": "Gavin Allman"
+        },
+        "inLanguage": "en-US",
+        "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://www.yourwebsite.com/images/profile-photo.jpg",
+            "caption": "Gavin Allman"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://gavinallman.me"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
-    <h1>Gavin Allman</h1>
-    <h3>About me</h3>
-    <p>I create things.</p>
+    <header>
+        <div class="header-content">
+            <h1>Gavin Allman</h1>
+            <p class="tagline">My SEO Journey</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Learning SEO from scratch</h2>
+        <p>
+            Welcome! This portfolio documents my journey as I learn SEO fundamentals and apply
+             them in real world scenarios. Explore my blog posts to follow along as I develop
+            practical optimization strategies and share key insights from my learning process.
+        </p>
+    </section>
+
+    <main>
+        <section id="about">
+            <h3>About Me</h3>
+            <p>
+                I'm Gavin Allman, a senior marketing student at West Virginia Wesleyan College with a completed
+                 computer science minor. The intersection of marketing and technology naturally led me to discover SEO—a field that 
+                 combines analytical problem solving with creative strategy.
+            </p>
+            <p>
+                From the moment I learned about search engine optimization, I was interested by its power to connect 
+                content with audiences. This portfolio serves as both a learning journey and a way to show my developing 
+                skills as I prepare to enter the digital marketing field.
+            </p>
+        </section>
+
+        <section id="blog">
+            <h3>My Journey</h3>
+            <ul>
+                <li><a href="WeekOne.html"><span class="post-number">Week 1</span>Tools, Google Searches, Google Search Console, and other helpful tips.</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Gavin Allman. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/gavin-allman-608aa8274/" target="_blank" class="fa fa-linkedin"></a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

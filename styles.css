@@ -1,0 +1,426 @@
+/* Custom Properties for Unique Branding */
+:root {
+    --color-primary: #0a0e27;
+    --color-secondary: #2d4263;
+    --color-accent: #00d4ff;
+    --color-text: #1f2937;
+    --color-text-light: #6b7280;
+    --color-bg: #ffffff;
+    --color-bg-alt: #fafbfc;
+    --color-border: #e5e7eb;
+    --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-secondary: 'Georgia', 'Times New Roman', serif;
+    --spacing-unit: clamp(1rem, 2vw, 1.5rem);
+    --max-width: min(70rem, 90vw);
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.7;
+    color: var(--color-text);
+    background: var(--color-bg);
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+}
+
+/* Navigation Styling for Blog Posts */
+nav {
+    background: transparent;
+    padding: 1.5rem var(--spacing-unit);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    padding: 0.75rem 1.5rem;
+    background: var(--color-primary);
+    border: 2px solid var(--color-accent);
+    border-radius: 4px;
+    transition: var(--transition);
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0, 212, 255, 0.3);
+}
+
+nav a:hover {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 212, 255, 0.5);
+    border-color: var(--color-accent);
+}
+
+nav a:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+
+/* Header with Asymmetric Design */
+header {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    padding: clamp(3rem, 8vw, 6rem) var(--spacing-unit);
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: var(--color-bg);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+}
+
+.header-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-family: var(--font-secondary);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    color: var(--color-accent);
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+/* Hero Section with Distinctive Style */
+.hero {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: clamp(3rem, 6vw, 5rem) var(--spacing-unit);
+    text-align: left;
+    border-left: 4px solid var(--color-accent);
+    background: linear-gradient(to right, var(--color-bg-alt) 0%, transparent 100%);
+}
+
+.hero h2 {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    color: var(--color-text-light);
+    line-height: 1.8;
+    max-width: 45rem;
+}
+
+/* Main Content with Breathing Room */
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit) clamp(3rem, 6vw, 5rem);
+}
+
+section {
+    margin-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+/* Unique Section Headers */
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 60%;
+    background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-secondary) 100%);
+    border-radius: 3px;
+}
+
+/* About Section - Clean Design */
+#about {
+    background: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+}
+
+#about:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+#about p {
+    color: var(--color-text);
+    font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+/* Blog List with Modern Touch */
+#blog ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1.25rem;
+}
+
+#blog li {
+    background: var(--color-bg-alt);
+    padding: 0;
+    border-radius: 0;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+#blog li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-secondary) 100%);
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#blog li:hover {
+    border-color: var(--color-accent);
+    background: var(--color-bg);
+}
+
+#blog li:hover::before {
+    width: 6px;
+}
+
+#blog a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: clamp(1.15rem, 2vw, 1.35rem);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.75rem 2rem;
+    position: relative;
+    z-index: 1;
+    transition: var(--transition);
+}
+
+#blog a:hover {
+    color: var(--color-secondary);
+    padding-left: 2.5rem;
+}
+
+.post-number {
+    font-family: var(--font-secondary);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--color-accent);
+    opacity: 0.4;
+    transition: var(--transition);
+}
+
+#blog li:hover .post-number {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Footer with Personality */
+footer {
+    background: var(--color-primary);
+    color: #9ca3af;
+    text-align: center;
+    padding: clamp(2.5rem, 5vw, 4rem) var(--spacing-unit);
+    margin-top: clamp(5rem, 10vw, 8rem);
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: var(--color-primary);
+    clip-path: polygon(0 0, 100% 50%, 100% 0);
+}
+
+footer p {
+    margin: 0;
+    font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+    color: #9ca3af;
+    position: relative;
+    z-index: 1;
+}
+
+/* Article Styling for Blog Posts */
+article {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-unit);
+}
+
+article h1 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    letter-spacing: -0.03em;
+}
+
+article h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    color: var(--color-secondary);
+    letter-spacing: -0.02em;
+}
+
+.meta {
+    color: var(--color-text-light);
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    margin-bottom: 3rem;
+    font-style: italic;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--color-accent);
+}
+
+article p {
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+    line-height: 1.9;
+}
+
+article ul {
+    margin-bottom: 2rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+article li {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+    font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+    line-height: 1.8;
+    padding-left: 2rem;
+    position: relative;
+}
+
+article li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+article a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+article a:hover {
+    color: var(--color-secondary);
+}
+
+code {
+    background: #f1f5f9;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    font-size: 0.9em;
+    color: #dc2626;
+    border: 1px solid #e2e8f0;
+}
+
+strong {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header::after,
+    footer::before {
+        height: 40px;
+    }
+    
+    .hero {
+        border-left-width: 3px;
+    }
+    
+    #blog a {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+    
+    h3::before {
+        width: 4px;
+    }
+    
+    nav a {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus Styles for Accessibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+
+/* Socials Hover */
+.fa:hover {
+  opacity: 0.7;
+}
