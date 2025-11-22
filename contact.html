@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Gavin Allman | SEO & Marketing Services</title>
+    <meta name="description" content="Get in touch with Gavin Allman for SEO services, digital marketing projects, or collaboration opportunities. Available for freelance work and consultations.">
+    <meta name="author" content="Gavin Allman">
+    <link rel="canonical" href="https://gavinallman.me/contact.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Schema Markup for Contact Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Gavin Allman",
+        "description": "Get in touch with Gavin Allman for SEO services, digital marketing projects, or collaboration opportunities.",
+        "url": "https://gavinallman.me/contact.html",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Gavin Allman",
+            "email": "gavin@gavinallman.me",
+            "jobTitle": "SEO Specialist & Marketing Student",
+            "url": "https://gavinallman.me",
+            "sameAs": [
+                "https://www.linkedin.com/in/gavin-allman-608aa8274/",
+                "https://github.com/GavinAllman"
+            ]
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://gavinallman.me"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://gavinallman.me/contact.html"
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="contact-page">
+    
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">← Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link active nav-cta">Get In Touch</a>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Let's Connect</h1>
+                <p class="page-description">
+                    Interested in working together? Have questions about SEO? I'd love to hear from you.
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Contact Content -->
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send Me a Message</h2>
+                    <p class="form-description">
+                        Fill out the form below and I'll get back to you within 24-48 hours.
+                    </p>
+                    
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xzzweepn" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required 
+                                placeholder="John Doe"
+                                aria-required="true"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="_replyto" 
+                                required 
+                                placeholder="john@example.com"
+                                aria-required="true"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required aria-required="true">
+                                <option value="">Select a topic...</option>
+                                <option value="freelance">Freelance Project</option>
+                                <option value="consultation">SEO Consultation</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="question">General Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                required 
+                                placeholder="Tell me about your project or question..."
+                                aria-required="true"
+                            ></textarea>
+                        </div>
+                        
+                        <!-- Hidden fields for Formspree -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Gavin Allman">
+                        <input type="hidden" name="_next" value="https://gavinallman.me/contact.html?success=true">
+                        <input type="text" name="_gotcha" style="display:none">
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+
+                <!-- Contact Info Sidebar -->
+                <div class="contact-info-section">
+                    <div class="contact-card">
+                        <h3>Other Ways to Connect</h3>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:Gavin.Allman@proton.me">Gavin.Allman@proton.me</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/gavin-allman-608aa8274/" target="_blank" rel="noopener noreferrer">Connect with me</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/GavinAllman" target="_blank" rel="noopener noreferrer">View my projects</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="availability-card">
+                        <div class="availability-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Availability</h3>
+                        <p>
+                            Currently looking to start my SEO career. 
+                            Response time: 24-48 hours.
+                        </p>
+                    </div>
+
+
+                    <div class="expertise-card">
+                        <h3>What I Can Help With</h3>
+                        <ul class="expertise-list">
+                            <li><i class="fas fa-check"></i> SEO Strategy & Implementation</li>
+                            <li><i class="fas fa-check"></i> Technical SEO Audits</li>
+                            <li><i class="fas fa-check"></i> On-Page Optimization</li>
+                            <li><i class="fas fa-check"></i> Keyword Research</li>
+                            <li><i class="fas fa-check"></i> Content Strategy</li>
+                            <li><i class="fas fa-check"></i> Google Search Console Setup</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Gavin Allman</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/gavin-allman-608aa8274/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Gavin Allman on LinkedIn">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/GavinAllman" target="_blank" rel="noopener noreferrer" aria-label="View Gavin Allman's GitHub profile">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="contact.js"></script>
+</body>
+</html>
